@@ -37,14 +37,14 @@ class InstallCommand extends Command
      */
     public function handle()
     {
-        $this->line("<info>Setting up Package</info>");
-        $this->line("");
+        $this->info('Setting up Package');
+        $this->line('');
 
         $this->call('vendor:publish', [
             '--tag' => 'package.config'
         ]);
 
-        $this->line("");
-        $this->line("<info>Package installed sucessfully!!</info>");
+        $this->line('');
+        $this->info('Package installed sucessfully!!');
     }
 }
