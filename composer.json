@@ -1,0 +1,47 @@
+{
+    "name": "mane-olawale/laravel-package-boilerplate",
+    "description": "A laravel package boilerplate.",
+    "type": "project",
+    "license": "MIT",
+    "homepage": "https://github.com/mane-olawale/laravel-package-boilerplate",
+    "support": {
+        "issues": "https://github.com/mane-olawale/laravel-package-boilerplate/issues",
+        "source": "https://github.com/mane-olawale/laravel-package-boilerplate"
+    },
+    "authors": [
+        {
+            "name": "Ilesanmi Olawale Adedotun",
+            "homepage": "https://twitter.com/mane_olawale",
+            "email": "horlwaley001@gmail.com"
+        }
+    ],
+	"require": {
+		"php": "^7.2|^8.0",
+        "illuminate/support": "^6.0|^7.0|^8.0|^9.0"
+	},
+    "require-dev": {
+        "orchestra/testbench": "^4.0|^5.0|^6.0|^7.0",
+        "phpunit/phpunit": "~8.0|~9.0",
+        "mockery/mockery": "~1.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "ManeOlawale\\Laravel\\Package\\": "src/"
+        }
+    },
+    "autoload-dev": {
+         "psr-4": {
+             "ManeOlawale\\Laravel\\Package\\Tests\\": "tests/"
+         }
+     },
+    "scripts": {
+        "test": "./vendor/bin/phpunit --verbose"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ManeOlawale\\Laravel\\Package\\PackageServiceProvider"
+            ]
+        }
+    }
+}
