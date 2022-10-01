@@ -17,8 +17,8 @@ class InstallationTest extends TestBench
 
         // execute the command to force override
         $command->execute();
-        $command->expectsOutput("<info>Setting up Package</info>");
-        $command->expectsOutput("<info>Package installed sucessfully!!</info>");
+        $command->expectsOutput("Setting up Package");
+        $command->expectsOutput("Package installed sucessfully!!");
 
         // Assert that the original contents are present
         $this->assertEquals(
